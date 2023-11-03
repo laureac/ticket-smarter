@@ -12,22 +12,22 @@ const Events = ({ occasion, setOccasion }) => {
   };
 
   return (
-    <div className="flex w-full border-b py-5">
-      <div className="flex flex-col w-2/12 ">
+    <div className="flex w-full border-b py-5 flex-col md:flex-row">
+      <div className="flex flex-col md:w-2/12 ">
         <p className="font-bold text-xl">{normalisedOccasion.day}</p>
       </div>
-      <div className="w-6/12">
+      <div className="md:w-6/12">
         <p className="font-small text-slate-500">{normalisedOccasion.time}</p>
         <h3 className="font-bold">{normalisedOccasion.name}</h3>
         <p className="font-small text-slate-500">
           {normalisedOccasion.location}
         </p>
       </div>
-      <p className="w-2/12">
+      <p className="md:w-2/12">
         <span className="font-bold">{normalisedOccasion.price} </span>
         ETH
       </p>
-      <div className="w-2/12 flex">
+      <div className="md:w-2/12 flex">
         {normalisedOccasion.tickets === "0" ? (
           <button type="button" className="btn-blue btn my-auto" disabled>
             Sold Out

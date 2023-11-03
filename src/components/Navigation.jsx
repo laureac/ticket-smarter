@@ -22,7 +22,7 @@ const Navigation = ({ account }) => {
         <a href="/">
           <h1 className="italic">Ticketsmarter</h1>
         </a>
-        <ul className="flex gap-4">
+        <ul className="gap-4 hidden md:flex">
           {linkCategories.map((cat, index) => {
             return <Link key={index} cat={cat} />;
           })}
